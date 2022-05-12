@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
        - name: tomcat
-         image: dockertejdeep123/dockerimage:ovaledgee4 
+         image: pratapp12/oeapp:v2
          env:
           - name: OVALEDGE_MYSQL_URL
             value: "jdbc:mysql://database-1.c560uxygxrjh.ap-south-1.rds.amazonaws.com:3306/ovaledgedb?useSSL=false"
@@ -50,5 +50,5 @@ spec:
           - name: entityBaseURL
             value: ""
          ports:
-         - containerPort: 9090
+         - containerPort: 8080 
 
