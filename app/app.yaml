@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
        - name: tomcat
-         image: pratapp12/oeapp:v3
+         image: pratapp12/oeapp:v4
          env:
           - name: OVALEDGE_MYSQL_URL
             value: "jdbc:mysql://database-1.c560uxygxrjh.ap-south-1.rds.amazonaws.com:3306/ovaledgedb?useSSL=false"
@@ -31,6 +31,8 @@ spec:
             value: "https://ovaledge-ma.okta.com/app/exkbqnqdbnfYdOJEe5d6/sso/saml/metadata"
           - name: OVALEDGE_SECURITY_TYPE
             value: "db"
+          - name: AUTO_DB_MIGRATION
+            value: "false"
           - name: SAML_METADATA_TYPE
             value: "url"
           - name: ENTITY_BASE_PROTOCOL
