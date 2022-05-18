@@ -17,7 +17,9 @@ spec:
     spec:
       containers:
        - name: tomcat
-         image: pratapp12/oeapp:v4
+         image: ovaledge.jfrog.io/ovaledge-docker-local/ovaledge:mcktest18 
+         imagePullSecrets:
+         - name: regcred
          env:
           - name: OVALEDGE_MYSQL_URL
             value: "jdbc:mysql://database-1.c560uxygxrjh.ap-south-1.rds.amazonaws.com:3306/ovaledgedb?useSSL=false"
