@@ -18,6 +18,7 @@ spec:
       containers:
        - name: tomcat
          image: ovaledge.jfrog.io/ovaledge-docker-local/ovaledge:mcktest2 
+         imagePullPolicy: Always
          imagePullSecrets:
          name: regcred
          env:
